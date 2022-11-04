@@ -1,0 +1,43 @@
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   width: 200px;
+   height: 200px;
+   margin: 2rem auto;
+    background-image: url(https://i.postimg.cc/7YnNCbBP/black-white-spiral-background-1048-16005.webp);
+    transition: all 2s;
+    background-size: cover;
+}
+.container:hover{
+    transform: scale(0.4) rotate();
+    animation: awesomeAnimation 7s infinite;
+}
+ @keyframes awesomeAnimation{
+    0%{
+        background-color: rgb(249, 249, 249);
+       
+    }
+    30%{
+ 
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100%{
+       
+    }
+}
+@keyframes awesome {
+    from {
+        background-color: red;
+        color: black;
+    }
+    to{
+        transform: rotate(300deg);
+    }
+}
